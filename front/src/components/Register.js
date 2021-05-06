@@ -1,13 +1,29 @@
 import React from 'react';
 import { Form, Col, Button } from "react-bootstrap";
 
-export default function Login() {
+export default function Register() {
     return (
         <div style={container}>
             <div style={textBox}>
-                <div style={title}>Login</div>
+                <div style={title}>Register</div>
                 <div>
                     <Form className="main-form">
+                    <Form.Row>
+                        <Form.Group as={Col} controlId="name">
+                            <Form.Row>
+                                <Form.Label className="form-label" style={text}>Name:</Form.Label>
+                            </Form.Row>
+                            <Form.Row>
+                                <Form.Control
+                                className="form-input"
+                                name="name"
+                                type="name"
+                                placeholder="Name"
+                                style={bar}
+                                />
+                            </Form.Row>
+                        </Form.Group>
+                        </Form.Row>
                         <Form.Row>
                         <Form.Group as={Col} controlId="email">
                             <Form.Row>
@@ -40,8 +56,24 @@ export default function Login() {
                             </Form.Row>
                         </Form.Group>
                         </Form.Row>
+                        <Form.Row>
+                        <Form.Group as={Col} controlId="confirm-password">
+                            <Form.Row>
+                                <Form.Label className="form-label" style={text}>Confirm Password:</Form.Label>
+                            </Form.Row>
+                            <Form.Row>
+                                <Form.Control
+                                className="form-input"
+                                name="confirm-password"
+                                type="confirm-password"
+                                placeholder="Retype password"
+                                style={bar}
+                                />
+                            </Form.Row>
+                        </Form.Group>
+                        </Form.Row>
                         <Button variant="primary" type="submit" style={button}>
-                        Login
+                        Register
                         </Button>
                     </Form>
                 </div>
