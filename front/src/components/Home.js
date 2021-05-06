@@ -115,7 +115,7 @@ const secondPartTextBox = {
     width: "40%",
     height: "100%",
     marginTop: "50px",
-    marginLeft: "200px",
+    marginLeft: "10%",
     paddingLeft: "40px",
     display: "flex",
     flexDirection: "column",
@@ -132,7 +132,7 @@ const textTitle = {
 }
 
 const text = {
-    width: "70%",
+    width: "60%",
     fontFamily: "Avenir",
     fontSize: "20px",
     lineHeight: "1.56",
